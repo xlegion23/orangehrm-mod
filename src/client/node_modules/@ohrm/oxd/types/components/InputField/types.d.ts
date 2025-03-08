@@ -1,0 +1,33 @@
+export declare const COMPONENT_INPUT = "oxd-input";
+export declare const COMPONENT_FILE_INPUT = "oxd-file-input";
+export declare const COMPONENT_TEXTAREA = "oxd-textarea";
+export declare const COMPONENT_PASSWORD_INPUT = "oxd-password-input";
+export declare const COMPONENT_CHECKBOX_INPUT = "oxd-checkbox-input";
+export declare const COMPONENT_SWITCH_INPUT = "oxd-switch-input";
+export declare const COMPONENT_RADIO_INPUT = "oxd-radio-input";
+export declare const COMPONENT_DATE_INPUT = "oxd-date-input";
+export declare const COMPONENT_AUTOCOMPLETE_INPUT = "oxd-autocomplete-input";
+export declare const COMPONENT_SELECT_INPUT = "oxd-select-input";
+export declare const COMPONENT_MULTISELECT_INPUT = "oxd-multiselect-input";
+export declare const COMPONENT_TIME_INPUT = "oxd-time-input";
+export declare const COMPONENT_COLOR_INPUT = "oxd-color-input";
+export declare const TYPE_INPUT = "input";
+export declare const TYPE_FILE_INPUT = "file";
+export declare const TYPE_TEXTAREA = "textarea";
+export declare const TYPE_PASSWORD = "password";
+export declare const TYPE_CHECKBOX = "checkbox";
+export declare const TYPE_SWITCH = "switch";
+export declare const TYPE_RADIO = "radio";
+export declare const TYPE_DATE = "date";
+export declare const TYPE_AUTOCOMPLETE = "autocomplete";
+export declare const TYPE_SELECT = "select";
+export declare const TYPE_MULTISELECT = "multiselect";
+export declare const TYPE_TIME = "time";
+export declare const TYPE_COLOR = "color";
+export declare const TYPES: string[];
+export declare const TYPE_MAP: TypeMap;
+export declare type Types = typeof TYPE_INPUT | typeof TYPE_FILE_INPUT | typeof TYPE_TEXTAREA | typeof TYPE_PASSWORD | typeof TYPE_CHECKBOX | typeof TYPE_SWITCH | typeof TYPE_RADIO | typeof TYPE_DATE | typeof TYPE_AUTOCOMPLETE | typeof TYPE_SELECT | typeof TYPE_MULTISELECT | typeof TYPE_TIME | typeof TYPE_COLOR;
+export declare type Components = typeof COMPONENT_INPUT | typeof COMPONENT_FILE_INPUT | typeof COMPONENT_TEXTAREA | typeof COMPONENT_PASSWORD_INPUT | typeof COMPONENT_CHECKBOX_INPUT | typeof COMPONENT_SWITCH_INPUT | typeof COMPONENT_RADIO_INPUT | typeof COMPONENT_DATE_INPUT | typeof COMPONENT_AUTOCOMPLETE_INPUT | typeof COMPONENT_SELECT_INPUT | typeof COMPONENT_MULTISELECT_INPUT | typeof COMPONENT_TIME_INPUT | typeof COMPONENT_COLOR_INPUT;
+export interface TypeMap {
+    [key: string]: Components;
+}

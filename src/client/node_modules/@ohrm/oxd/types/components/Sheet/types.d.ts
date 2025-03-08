@@ -1,0 +1,11 @@
+export declare const TYPE_GRAY_DARKEN_2 = "gray-darken-2";
+export declare const TYPE_GRAY_DARKEN_1 = "gray-darken-1";
+export declare const TYPE_GRAY = "gray";
+export declare const TYPE_GRAY_LIGHTEN_1 = "gray-lighten-1";
+export declare const TYPE_GRAY_LIGHTEN_2 = "gray-lighten-2";
+export declare const TYPE_LIGHT_GRAY = "light-gray";
+export declare const TYPE_PASTEL_WHITE = "pastel-white";
+export declare const TYPE_WHITE_SHADOW = "white-shadow";
+export declare const TYPE_WHITE = "white";
+export declare const TYPES: string[];
+export declare type SheetType = typeof TYPE_GRAY_DARKEN_2 | typeof TYPE_GRAY_DARKEN_1 | typeof TYPE_GRAY | typeof TYPE_GRAY_LIGHTEN_1 | typeof TYPE_GRAY_LIGHTEN_2 | typeof TYPE_LIGHT_GRAY | typeof TYPE_PASTEL_WHITE | typeof TYPE_WHITE_SHADOW | typeof TYPE_WHITE;

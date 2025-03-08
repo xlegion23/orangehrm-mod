@@ -1,0 +1,18 @@
+export declare const TAG_H1 = "h1";
+export declare const TAG_H2 = "h2";
+export declare const TAG_H3 = "h3";
+export declare const TAG_H4 = "h4";
+export declare const TAG_H5 = "h5";
+export declare const TAG_H6 = "h6";
+export declare const TAG_P = "p";
+export declare const TAG_SPAN = "span";
+export declare const TAGS: string[];
+export declare const TYPE_SUBTITLE_1 = "subtitle-1";
+export declare const TYPE_SUBTITLE_2 = "subtitle-2";
+export declare const TYPE_CARD_TITLE = "card-title";
+export declare const TYPE_TOAST_TITLE = "toast-title";
+export declare const TYPE_TOAST_MESSAGE = "toast-message";
+export declare const TYPE_CARD_BODY = "card-body";
+export declare const TYPES: string[];
+export declare type Tags = typeof TAG_H1 | typeof TAG_H2 | typeof TAG_H3 | typeof TAG_H4 | typeof TAG_H5 | typeof TAG_H6 | typeof TAG_P | typeof TAG_SPAN;
+export declare type TextTypes = typeof TYPE_SUBTITLE_1 | typeof TYPE_SUBTITLE_2 | typeof TYPE_CARD_TITLE | typeof TYPE_TOAST_TITLE | typeof TYPE_TOAST_MESSAGE | typeof TYPE_CARD_BODY;

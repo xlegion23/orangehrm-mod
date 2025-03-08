@@ -127,8 +127,10 @@ export default {
 <style lang="scss">
 .orangehrm-upgrade-layout {
   .oxd-topbar-header-userarea {
-    align-self: center;
-    margin-left: unset;
+    display: flex;
+    justify-content: flex-end; /* Moves it to the right */
+    align-items: center; /* Ensures it stays vertically aligned */
+    margin-left: auto; /* Pushes it to the right */
   }
 }
 </style>

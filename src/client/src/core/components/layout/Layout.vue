@@ -98,30 +98,50 @@ export default {
     },
   },
   setup(props) {
-    const showAboutModel = ref(false);
-    provide('permissions', readonly(props.permissions));
-    provide(dateFormatKey, readonly(props.dateFormat));
+  const showAboutModel = ref(false);
+  provide('permissions', readonly(props.permissions));
+  provide(dateFormatKey, readonly(props.dateFormat));
 
-    const openAboutModel = () => {
-      showAboutModel.value = true;
-    };
+  const openAboutModel = () => {
+    showAboutModel.value = true;
+  };
 
-    const closeAboutModel = () => {
-      showAboutModel.value = false;
-    };
+  const closeAboutModel = () => {
+    showAboutModel.value = false;
+  };
 
-    const onClickSupport = () => {
-      if (props.helpUrl) window.open(props.helpUrl, '_blank');
-    };
+  const onClickSupport = () => {
+    if (props.helpUrl) window.open(props.helpUrl, '_blank');
+  };
 
-    return {
-      onClickSupport,
-      showAboutModel,
-      openAboutModel,
-      closeAboutModel,
-    };
-  },
-};
+  // ✅ Inject Admin Attendance menu item
+  onMounted(() => {
+    const interval = setInterval(() => {
+      const menu = document.querySelector('.oxd-dropdown-menu');
+      if (menu && !document.querySelector('#admin-attendance-link')) {
+        const li = document.createElement('li');
+        li.innerHTML = `
+          <a id="admin-attendance-link" class="oxd-topbar-body-nav-tab-link" href="#">
+            Admin Attendance
+          </a>
+        `;
+        li.onclick = () => {
+          window.location.href = '/web/index.php/time/adminAttendance';
+        };
+        menu.appendChild(li);
+        clearInterval(interval);
+      }
+    }, 300); // Retry until dropdown is rendered
+  });
+
+  return {
+    onClickSupport,
+    showAboutModel,
+    openAboutModel,
+    closeAboutModel,
+  };
+}
+
 </script>
 
 <style lang="scss">
